@@ -1,0 +1,20 @@
+.navbar {
+  background: transparent;
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+
+  a {
+    color: darken($color-foreground, 25%);
+    transition: color $transition-type;
+  }
+
+  a:hover {
+    color: $color-primary;
+  }
+}

@@ -5,3 +5,13 @@ body {
   font-size: 24px;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+  transition: color $transition-type;
+
+  &:hover {
+    color: lighten($color-primary, 10%);
+  }
+}

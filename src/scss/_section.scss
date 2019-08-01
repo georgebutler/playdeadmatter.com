@@ -3,6 +3,6 @@
   background: $color-background;
 
   &:nth-child(odd) {
-    background: lighten($color-background, 10%);
+    background: lighten($color-background, 5%);
   }
 }
