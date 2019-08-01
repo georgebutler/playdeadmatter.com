@@ -5,6 +5,11 @@
 @import "section";
 @import "typography";
 
+::selection {
+  background: $color-primary;
+  color: $color-foreground;
+}
+
 *,
 *::before,
 *::after {

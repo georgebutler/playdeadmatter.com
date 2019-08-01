@@ -1,13 +1,24 @@
 .navbar {
   background: transparent;
   padding: 1rem 2rem;
+}
+
+.navbar-left {
+  text-align: left;
+  display: inline-block;
+  margin-right: 50%;
+}
+
+.navbar-right {
   text-align: right;
+  display: inline-block;
 }
 
 .navbar-item {
   margin-left: 1rem;
   display: inline-block;
   text-transform: uppercase;
+  font-size: 1rem;
 
   a {
     color: darken($color-foreground, 25%);
@@ -15,6 +26,10 @@
   }
 
   a:hover {
+    color: $color-primary;
+  }
+
+  .is-primary {
     color: $color-primary;
   }
 }
