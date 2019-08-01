@@ -5,6 +5,7 @@
 @import "navbar";
 @import "section";
 @import "typography";
+@import "utilities";
 
 ::selection {
   background: $color-primary;
@@ -23,16 +24,11 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden scroll;
+  line-height: 1.5;
 }
 
 img {
   width: 100%;
   vertical-align: middle;
   border-style: none;
-}
-
-.container {
-  max-width: 1080px;
-  width: 90vw;
-  margin: auto;
 }

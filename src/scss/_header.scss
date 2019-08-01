@@ -1,9 +1,9 @@
 .header {
-  height: 100vh;
+  height: 95vh;
 }
 
 .header-content {
-  transform: translateY(20%);
+  transform: translateY(10vh);
 }
 
 .header-title,
@@ -13,9 +13,8 @@
 
 .header-subtitle {
   font-size: 1.2rem;
+  margin: 0 auto 6rem auto;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
 }
 
 .header-buttons button {
