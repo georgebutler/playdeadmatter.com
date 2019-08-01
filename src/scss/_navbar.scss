@@ -2,6 +2,8 @@
   background: transparent;
   padding: 1rem 2rem;
   overflow: hidden;
+  display: inline;
+  vertical-align: top;
 }
 
 .navbar-logo {
@@ -16,14 +18,11 @@
 }
 
 .navbar-left {
-  text-align: left;
-  display: inline-block;
-  margin-right: 50%;
+  float: left;
 }
 
 .navbar-right {
-  text-align: right;
-  display: inline-block;
+  float: right;
 }
 
 .navbar-item {

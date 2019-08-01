@@ -1,0 +1,19 @@
+.footer {
+  background: $color-background;
+  color: inherit;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
+
+.footer-item {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer-item:not(:last-child):after {
+  content: "-";
+  display: inline;
+  margin-left: 1rem;
+  color: $color-primary;
+}
