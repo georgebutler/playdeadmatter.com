@@ -1,0 +1,19 @@
+.header {
+  height: 100vh;
+
+  .title,
+  .subtitle {
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+}
+
+.header-content {
+  transform: translateY(30%);
+}

@@ -1,8 +1,30 @@
+@import "variables";
 @import "typography";
+@import "header";
+@import "button";
+@import "section";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-    background: #111;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  background: $color-background;
+  color: $color-foreground;
+  margin: 0;
+  padding: 0;
+  overflow: hidden scroll;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
 }

@@ -1,0 +1,19 @@
+button {
+  background: $color-primary;
+  border-radius: $border-radius;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: background $transition-type;
+
+  &:hover {
+    background: lighten($color-primary, 10%);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
