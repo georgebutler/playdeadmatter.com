@@ -8,6 +8,7 @@ button {
   font-size: 1rem;
   padding: 1rem 2rem;
   transition: background $transition-type;
+  box-shadow: $box-shadow;
 
   &:hover {
     background: lighten($color-primary, 10%);
