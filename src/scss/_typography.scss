@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-primary;
   font-size: 24px;
   text-align: center;
 }
@@ -17,6 +15,14 @@ a {
 }
 
 p {
-  font-family: sans-serif;
+  font-family: $font-paragraph;
   font-size: 0.8em;
+}
+
+code {
+  background: lighten($color-background, 10%);
+  border-radius: $border-radius;
+  font-family: $font-monospace;
+  font-size: 0.7em;
+  padding: 0.5em;
 }
