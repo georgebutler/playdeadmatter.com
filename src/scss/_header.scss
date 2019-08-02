@@ -1,5 +1,22 @@
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: url("/static/img/HighresScreenshot00110-1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -99;
+}
+
 .header {
-  height: 95vh;
+  height: 100vh;
+  background: rgba(17, 17, 17, 0.9);
 }
 
 .header-content {
