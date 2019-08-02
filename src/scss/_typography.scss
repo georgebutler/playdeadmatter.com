@@ -26,3 +26,9 @@ code {
   font-size: 0.7em;
   padding: 0.5em;
 }
+
+@media only screen and (max-width: $max-width-mobile) {
+  body {
+    font-size: 16px;
+  }
+}

@@ -7,3 +7,11 @@
 .display-none {
   display: none;
 }
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}

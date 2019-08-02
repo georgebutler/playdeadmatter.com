@@ -21,13 +21,13 @@
 body {
   background: $color-background;
   color: $color-foreground;
-  margin: 0;
-  padding: 0;
-  overflow: hidden scroll;
   line-height: 1.5;
+  margin: 0;
+  overflow: hidden scroll;
+  padding: 0;
 }
 
 img {
-  width: 100%;
   user-select: none;
+  width: 100%;
 }

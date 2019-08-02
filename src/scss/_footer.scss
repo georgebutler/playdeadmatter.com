@@ -2,8 +2,8 @@
   background: $color-background;
   color: inherit;
   font-size: 0.9rem;
-  padding: 1rem 2rem;
   overflow: hidden;
+  padding: 1rem 2rem;
 }
 
 .footer-item {
@@ -12,8 +12,24 @@
 }
 
 .footer-item:not(:last-child):after {
+  color: $color-primary;
   content: "-";
   display: inline;
   margin-left: 1rem;
-  color: $color-primary;
+}
+
+@media only screen and (max-width: $max-width-mobile) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-item {
+    display: block;
+    margin: 0;
+    padding: 0.2em 0;
+  }
+
+  .footer-item:not(:last-child):after {
+    display: none;
+  }
 }
