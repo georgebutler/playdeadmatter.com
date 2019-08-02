@@ -17,3 +17,11 @@
   font-weight: normal;
   text-transform: uppercase;
 }
+
+.section-content {
+  padding: 1rem;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
