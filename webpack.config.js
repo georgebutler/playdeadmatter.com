@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
@@ -39,7 +40,13 @@ module.exports = {
       title: "Dead Matter | Quantum Integrity Software Inc.",
       template: "./src/index.html"
     }),
-    new CopyWebpackPlugin([{ from: "./src/assets/img", to: "./static/img" }])
+    new CopyWebpackPlugin([{ from: "./src/assets/img", to: "./static/img" }]),
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      pngquant: {
+        quality: "80-90"
+      }
+    })
   ],
   resolve: {
     extensions: [".js", ".scss", ".css"]
