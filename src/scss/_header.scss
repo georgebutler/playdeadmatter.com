@@ -1,21 +1,13 @@
-.header::before {
+.header {
   background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.7),
+      rgba(17, 17, 17, 0.7)
+    ),
+    url("/static/img/HighresScreenshot01-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/static/img/HighresScreenshot01-min.jpg");
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -99;
-}
-
-.header {
-  background: rgba(17, 17, 17, 0.7);
   height: 100vh;
 }
 
@@ -25,8 +17,8 @@
 
 .header-title,
 .header-subtitle {
-  text-transform: uppercase;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .header-subtitle {
