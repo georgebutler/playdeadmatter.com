@@ -27,6 +27,11 @@ code {
   padding: 0.5em;
 }
 
+.is-primary {
+  color: $color-primary;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: $max-width-mobile) {
   body {
     font-size: 16px;
