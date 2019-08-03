@@ -42,6 +42,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{ from: "./src/assets/img", to: "./static/img" }]),
     new ImageminPlugin({
+      disable: process.env.NODE_ENV !== "production",
       test: /\.(jpe?g|png|gif|svg)$/i,
       pngquant: {
         quality: "80-90"
