@@ -37,12 +37,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: "Dead Matter | Quantum Integrity Software Inc.",
-      template: "./src/index.html"
-    }),
+    new HtmlWebpackPlugin(
+      {
+        title: "Dead Matter | Quantum Integrity Software Inc.",
+        template: "./src/index.html"
+      },
+      {
+        title: "About | Quantum Integrity Software Inc.",
+        template: "./src/about.html"
+      }
+    ),
     new CopyWebpackPlugin([
-      { from: "src/assets/robots.txt", to: "./" },
+      { from: "src/assets/Robots.txt", to: "./" },
       { from: "./src/assets/img", to: "./static/img" }
     ]),
     new ImageminPlugin({
