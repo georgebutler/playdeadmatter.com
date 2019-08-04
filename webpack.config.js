@@ -48,7 +48,7 @@ module.exports = {
       }
     ),
     new CopyWebpackPlugin([
-      { from: "src/assets/Robots.txt", to: "./" },
+      { from: "./src/assets", to: "./" },
       { from: "./src/assets/img", to: "./static/img" }
     ]),
     new ImageminPlugin({
