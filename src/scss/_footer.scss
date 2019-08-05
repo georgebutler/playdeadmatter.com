@@ -1,21 +1,21 @@
 .footer {
   background: $color-background;
   color: inherit;
-  font-size: 0.9rem;
+  font-size: 0.8em;
   overflow: hidden;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
 }
 
 .footer-item {
   display: inline-block;
-  margin: 0 0.5rem;
+  margin: 0 0.5em;
 }
 
 .footer-item:not(:last-child):after {
   color: $color-primary;
   content: "-";
   display: inline;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 @media only screen and (max-width: $max-width-mobile) {

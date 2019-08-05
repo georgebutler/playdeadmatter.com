@@ -11,11 +11,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="./static/main.bundle.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#111111" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="stylesheet" href="/static/main.bundle.css" />
   </head>
 
   <body>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="container">
         <div class="navbar-left">
           <a href="/" class="navbar-logo">
@@ -24,13 +66,13 @@
         </div>
         <div class="navbar-right">
           <div class="navbar-item">
-            <a href="/">About</a>
+            <a href="/about" class="is-active">About</a>
           </div>
           <div class="navbar-item">
-            <a href="/">News</a>
+            <a href="https://qisoftware.ca" target="_blank">News</a>
           </div>
           <div class="navbar-item">
-            <a href="/">Media</a>
+            <a href="/media">Media</a>
           </div>
           <div class="navbar-item">
             <a href="https://qisoftware.ca/roadmap" target="_blank">Roadmap</a>
@@ -45,133 +87,63 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="header">
+    </nav>
+    <header class="header-about">
       <div class="header-content">
         <div class="container">
-          <img src="/static/img/DMLogo_Red-min.png" alt="Dead Matter" />
-          <h1 class="display-none">
-            Dead Matter, a game by Quantum Integrity Inc.
+          <h1 class="header-title">
+            What is Dead Matter?
           </h1>
-          <h2 class="header-subtitle">
-            A rogue-lite that aims to quench the community’s thirst for a title
-            that properly balances survival mechanics with gameplay.
-          </h2>
-          <div class="header-buttons">
-            <button>Check out the latest Development Vlogs</button>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="section">
+    </header>
+    <section class="section">
       <div class="container">
-        <div class="section-title">Our Mission</div>
+        <div class="section-title">What is Dead Matter?</div>
         <p>
-          We are a hardworking team of multi-talented developers that all
-          originate from either the Source Engine or Fallout modding
-          communities. Our core team currently consists of 3 full-time staff and
-          a handful of contractors. We will expand upon releasing Dead Matter on
-          Early Access and we will continue to bring you the zombie survival
-          experience you’ve been waiting years for.
+          Dead Matter by Quantum Integrity Inc. is our most ambicious project
+          yet. Bringing together all the best elements of the open-world
+          survival genre, Dead Matter is an exansive game set in the
+          post-apoclypic world of Alberta, Cananda. Dead Matter is unlike
+          anything else you've seen in the survival genre, no more broken
+          promises, abandoned development, or stale content.
         </p>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="section-title">Key Features</div>
-        <div class="columns">
-          <div class="column">
-            <p>
-              Developed by a
-              <span class="is-primary">talented and passionate</span> team of
-              developers.
-            </p>
-            <p>
-              <span class="is-primary">Zero microtransactions</span> or
-              pay-to-win features.
-            </p>
-            <p>
-              We're very
-              <span class="is-primary">community friendly!</span> Join our
-              Discord and feel free to chat.
-            </p>
-          </div>
-          <div class="column">
-            <p>
-              Explore our detailed open world recreation of
-              <span class="is-primary">Alberta, Canada.</span>
-            </p>
-            <p>
-              The world of Dead Matter is full of
-              <span class="is-primary">vehicles.</span>
-            </p>
-            <p>
-              A sprawling collection of
-              <span class="is-primary">randomly generated locations.</span>
-            </p>
-          </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <p>
+          Quantum Integrity Software Inc. &copy; COPYRIGHT 2018 | ALL RIGHTS
+          RESERVED
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-item">
+          <a href="https://twitter.com/deadmattergame" target="_blank"
+            >Twitter</a
+          >
+        </div>
+        <div class="footer-item">
+          <a href="https://www.facebook.com/quantumintegrity" target="_blank"
+            >Facebook</a
+          >
+        </div>
+        <div class="footer-item">
+          <a
+            href="https://www.youtube.com/channel/UCYXv_gE6LCeLsUmNLrRcxaA"
+            target="_blank"
+            >Youtube</a
+          >
+        </div>
+        <div class="footer-item">
+          <a href="https://discord.gg/uV2VNSA" target="_blank">Discord</a>
+        </div>
+        <div class="footer-item">
+          <a href="https://www.reddit.com/r/deadmatter" target="_blank"
+            >Reddit</a
+          >
         </div>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="section-title">True Sandbox Survival</div>
-        <div class="columns">
-          <div class="column">
-            <div class="section-content">
-              <p>
-                You’ve got a safehouse that has food being grown, you’ve got a
-                vehicle to quickly get around the map and you’re a
-                self-sustained survivor.
-              </p>
-              <img
-                src="/static/img/HighresScreenshot02-min.jpg"
-                alt="Dead Matter - Safehouses"
-              />
-            </div>
-          </div>
-          <div class="column">
-            <div class="section-content">
-              <img
-                src="/static/img/HighresScreenshot03-min.jpg"
-                alt="Dead Matter - CoOp Survival"
-              />
-              <p>
-                Compete or cooperate with other survivors to recover rare gear
-                or work towards uncovering the mystery surrounding the region.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="section-title">Survival, By Any Means Necessary</div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-item">
-        <a href="https://twitter.com/deadmattergame" target="_blank">Twitter</a>
-      </div>
-      <div class="footer-item">
-        <a href="https://www.facebook.com/quantumintegrity" target="_blank"
-          >Facebook</a
-        >
-      </div>
-      <div class="footer-item">
-        <a
-          href="https://www.youtube.com/channel/UCYXv_gE6LCeLsUmNLrRcxaA"
-          target="_blank"
-          >Youtube</a
-        >
-      </div>
-      <div class="footer-item">
-        <a href="https://discord.gg/uV2VNSA" target="_blank">Discord</a>
-      </div>
-      <div class="footer-item">
-        <a href="https://www.reddit.com/r/deadmatter" target="_blank">Reddit</a>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
