@@ -9,6 +9,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+
+  &-about {
+    @extend .header;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.7),
+        rgba(17, 17, 17, 0.7)
+      ),
+      url("/static/img/media/HighresScreenshot08-min.jpg");
+    height: auto;
+  }
 }
 
 .header-content {
@@ -29,18 +40,6 @@
 
 .header-buttons button {
   margin: 0 0.5em;
-}
-
-.header-about {
-  background-attachment: fixed;
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.7),
-      rgba(17, 17, 17, 0.7)
-    ),
-    url("/static/img/media/HighresScreenshot08-min.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media only screen and (max-width: $max-width-mobile) {

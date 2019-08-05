@@ -32,6 +32,14 @@ code {
   font-weight: bold;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
 @media only screen and (max-width: $max-width-mobile) {
   body {
     font-size: 16px;
