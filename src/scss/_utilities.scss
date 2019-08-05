@@ -8,6 +8,10 @@
   display: none;
 }
 
+.mobile-only {
+  display: none;
+}
+
 .columns {
   display: flex;
 }
@@ -22,6 +26,10 @@
   }
 
   .column {
+    display: block;
+  }
+
+  .mobile-only {
     display: block;
   }
 }
