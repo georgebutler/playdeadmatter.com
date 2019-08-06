@@ -36,6 +36,18 @@ img {
 iframe {
   background: $color-background;
   border-radius: $border-radius;
+  user-select: none;
+}
+
+video {
+  background: $color-background;
+  border-radius: $border-radius;
+  user-select: none;
+  width: 100%;
+}
+
+video:focus {
+  outline-color: $color-primary;
 }
 
 ul {
