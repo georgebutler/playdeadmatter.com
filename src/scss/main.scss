@@ -28,8 +28,13 @@ body {
 }
 
 img {
+  border-radius: $border-radius;
   user-select: none;
   width: 100%;
+}
+
+iframe {
+  border-radius: $border-radius;
 }
 
 ul {

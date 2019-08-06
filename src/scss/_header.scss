@@ -10,17 +10,6 @@
   background-size: cover;
   height: 100vh;
 
-  &-about {
-    @extend .header;
-
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.7),
-        rgba(17, 17, 17, 0.7)
-      ),
-      url("/static/img/media/HighresScreenshot08-min.jpg");
-    height: auto;
-  }
-
   &-content {
     padding: 4em 0;
   }
@@ -39,6 +28,30 @@
 
   &-buttons button {
     margin: 0 0.5em;
+  }
+
+  /* About Header */
+  &-about {
+    @extend .header;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.7),
+        rgba(17, 17, 17, 0.7)
+      ),
+      url("/static/img/media/HighresScreenshot08-min.jpg");
+    height: auto;
+  }
+
+  /* Media Header */
+  &-media {
+    @extend .header;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.7),
+        rgba(17, 17, 17, 0.7)
+      ),
+      url("/static/img/media/HighresScreenshot03-min.jpg");
+    height: auto;
   }
 }
 

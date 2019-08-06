@@ -1,3 +1,4 @@
+.button,
 button {
   background: $color-primary;
   border-radius: $border-radius;
@@ -11,9 +12,11 @@ button {
 
   &:hover {
     background: lighten($color-primary, 10%);
+    color: inherit;
   }
 
   &:focus {
     outline: 0;
+    color: inherit;
   }
 }

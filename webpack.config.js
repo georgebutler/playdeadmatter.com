@@ -46,6 +46,11 @@ module.exports = {
       filename: "about.html",
       template: "./src/about.html"
     }),
+    new HtmlWebpackPlugin({
+      title: "Media | Quantum Integrity Software Inc.",
+      filename: "media.html",
+      template: "./src/media.html"
+    }),
     new CopyWebpackPlugin([
       { from: "./src/assets", to: "./" },
       { from: "./src/assets/img", to: "./static/img" }
