@@ -2,59 +2,59 @@
   background: transparent;
   overflow: hidden;
   display: inline;
-}
 
-.navbar-logo {
-  cursor: pointer;
+  &-logo {
+    cursor: pointer;
 
-  img {
-    width: 100%;
-    height: 100%;
-    max-width: 6em;
-    max-height: 6em;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 6em;
+      max-height: 6em;
+    }
   }
-}
 
-.navbar-left {
-  float: left;
-  padding: 1em;
-}
+  &-left {
+    float: left;
+    padding: 1em;
+  }
 
-.navbar-right {
-  float: right;
-  padding: 1em;
-}
+  &-right {
+    float: right;
+    padding: 1em;
+  }
 
-.navbar-item {
-  margin-left: 1em;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.9em;
+  &-item {
+    margin-left: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
 
-  a {
+  &-item a {
     color: darken($color-foreground, 25%);
     transition: color $transition-type;
   }
 
-  a:hover {
+  &-item a:hover {
     color: $color-primary;
   }
 
-  .is-primary {
+  &-item .is-primary {
     color: $color-primary;
     transition: text-shadow $transition-type;
   }
 
-  .is-primary:hover {
+  &-item .is-primary:hover {
     text-shadow: 1px 1px 8px $color-primary;
   }
 
-  .is-active {
+  &-item .is-active {
     color: $color-foreground;
     text-shadow: 1px 1px 8px $color-foreground;
   }
 
-  .is-active:hover {
+  &-item .is-active:hover {
     color: $color-foreground;
   }
 }
@@ -62,25 +62,25 @@
 @media only screen and (max-width: $max-width-mobile) {
   .navbar {
     text-align: center;
-  }
 
-  .navbar-logo {
-    display: none;
-  }
+    &-logo {
+      display: none;
+    }
 
-  .navbar-left {
-    display: none;
-  }
+    &-left {
+      display: none;
+    }
 
-  .navbar-right {
-    display: block;
-    padding: 1em;
-    width: 100%;
-  }
+    &-right {
+      display: block;
+      padding: 1em;
+      width: 100%;
+    }
 
-  .navbar-item {
-    display: block;
-    padding: 0.2em 0;
-    font-size: 1em;
+    &-item {
+      display: block;
+      padding: 0.2em 0;
+      font-size: 1em;
+    }
   }
 }

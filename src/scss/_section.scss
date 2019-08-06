@@ -5,37 +5,38 @@
   &:nth-child(odd) {
     background: lighten($color-background, 5%);
   }
-}
 
-.section-title {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-}
-
-.section-subtitle {
-  font-size: 1.5em;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.section-content {
-  padding: 1em;
-
-  img {
-    border-radius: $border-radius;
+  &-title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
   }
-}
 
-.section-mission {
-  padding: 1em 0;
-  background-attachment: fixed;
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.7),
-      rgba(17, 17, 17, 0.7)
-    ),
-    url("/static/img/media/HighresScreenshot04-min.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &-subtitle {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &-content {
+    padding: 1em;
+
+    img {
+      border-radius: $border-radius;
+    }
+  }
+
+  &-mission {
+    @extend .section;
+
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.7),
+        rgba(17, 17, 17, 0.7)
+      ),
+      url("/static/img/media/HighresScreenshot04-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
