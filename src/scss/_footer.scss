@@ -4,33 +4,33 @@
   font-size: 0.8em;
   overflow: hidden;
   padding: 1em 2em;
-}
 
-.footer-item {
-  display: inline-block;
-  margin: 0 0.5em;
-}
+  &-item {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
 
-.footer-item:not(:last-child):after {
-  color: $color-primary;
-  content: "-";
-  display: inline;
-  margin-left: 1em;
+  &-item:not(:last-child):after {
+    color: $color-primary;
+    content: "-";
+    display: inline;
+    margin-left: 1em;
+  }
 }
 
 @media only screen and (max-width: $max-width-mobile) {
   .footer {
     text-align: center;
-  }
 
-  .footer-item {
-    display: block;
-    margin: 0;
-    padding: 0.2em 0;
-    text-transform: uppercase;
-  }
+    &-item {
+      display: block;
+      margin: 0;
+      padding: 0.2em 0;
+      text-transform: uppercase;
+    }
 
-  .footer-item:not(:last-child):after {
-    display: none;
+    &-item:not(:last-child):after {
+      display: none;
+    }
   }
 }
