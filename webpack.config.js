@@ -51,10 +51,7 @@ module.exports = {
       filename: "media.html",
       template: "./src/media.html"
     }),
-    new CopyWebpackPlugin([
-      { from: "./src/assets", to: "./" },
-      { from: "./src/assets/img", to: "./static/img" }
-    ]),
+    new CopyWebpackPlugin([{ from: "./src/assets", to: "./" }]),
     new ImageminPlugin({
       disable: process.env.NODE_ENV !== "production",
       test: /\.(jpe?g|png|gif|svg)$/i,

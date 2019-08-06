@@ -7,15 +7,15 @@
 @import "typography";
 @import "utilities";
 
-::selection {
-  background: $color-primary;
-  color: $color-foreground;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+::selection {
+  background: $color-primary;
+  color: $color-foreground;
 }
 
 body {
@@ -34,8 +34,8 @@ img {
 }
 
 iframe {
-  border-radius: $border-radius;
   background: $color-background;
+  border-radius: $border-radius;
 }
 
 ul {
