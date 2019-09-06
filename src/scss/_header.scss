@@ -1,17 +1,13 @@
 .header {
   background-attachment: fixed;
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.7),
-      rgba(17, 17, 17, 0.7)
-    ),
-    url("/img/media/HighresScreenshot01-min.jpg");
+  background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url("/img/media/HighresScreenshot01-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 
   &-content {
-    padding: 4em 0;
+    padding: 8em 0;
   }
 
   &-title,
@@ -34,11 +30,7 @@
   &-about {
     @extend .header;
 
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.7),
-        rgba(17, 17, 17, 0.7)
-      ),
-      url("/img/media/HighresScreenshot08-min.jpg");
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("/img/media/HighresScreenshot08-min.jpg");
     height: auto;
   }
 
@@ -46,11 +38,7 @@
   &-media {
     @extend .header;
 
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.7),
-        rgba(17, 17, 17, 0.7)
-      ),
-      url("/img/media/HighresScreenshot03-min.jpg");
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("/img/media/HighresScreenshot03-min.jpg");
     height: auto;
   }
 }
