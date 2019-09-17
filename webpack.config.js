@@ -51,6 +51,11 @@ module.exports = {
       filename: "media.html",
       template: "./src/media.html"
     }),
+    new HtmlWebpackPlugin({
+      title: "404 | Quantum Integrity Software Inc.",
+      filename: "404.html",
+      template: "./src/404.html"
+    }),
     new CopyWebpackPlugin([{ from: "./src/assets", to: "./" }]),
     new ImageminPlugin({
       disable: process.env.NODE_ENV !== "production",
