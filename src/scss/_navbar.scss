@@ -42,20 +42,14 @@
 
   &-item .is-primary {
     color: $color-primary;
-    transition: text-shadow $transition-type;
-  }
-
-  &-item .is-primary:hover {
-    text-shadow: 1px 1px 8px $color-primary;
   }
 
   &-item .is-active {
     color: $color-foreground;
-    text-shadow: 1px 1px 8px $color-foreground;
-  }
 
-  &-item .is-active:hover {
-    color: $color-foreground;
+    &:hover {
+      color: inherit;
+    }
   }
 }
 

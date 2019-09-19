@@ -52,6 +52,16 @@ module.exports = {
       template: "./src/media.html"
     }),
     new HtmlWebpackPlugin({
+      title: "Announcement | Quantum Integrity Software Inc.",
+      filename: "announcement.html",
+      template: "./src/announcement.html"
+    }),
+    new HtmlWebpackPlugin({
+      title: "Press Kit | Quantum Integrity Software Inc.",
+      filename: "presskit.html",
+      template: "./src/presskit.html"
+    }),
+    new HtmlWebpackPlugin({
       title: "404 | Quantum Integrity Software Inc.",
       filename: "404.html",
       template: "./src/404.html"
