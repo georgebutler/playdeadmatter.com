@@ -45,6 +45,8 @@
 
 @media only screen and (max-width: $max-width-mobile) {
   .header {
+    height: auto;
+
     &-subtitle {
       font-size: 1em;
     }
